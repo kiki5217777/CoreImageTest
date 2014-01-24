@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreImage/CoreImage.h>
+#import <QuartzCore/QuartzCore.h>
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[])
