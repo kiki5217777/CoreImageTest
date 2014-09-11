@@ -46,7 +46,12 @@
 - (IBAction)autofiltersBtn:(id)sender {
     afVC = [[AutoFiltersViewController alloc]initWithNibName:@"AutoFiltersViewController" bundle:nil];
     [afVC setTitle:@"Auto Enhancement Filters"];
-    [self.navigationController pushViewController:afVC animated:YES];
+    
+    UINavigationController *nav = [[UINavigationController alloc]
+                                   initWithRootViewController:afVC];
+    [self presentViewController:nav animated:YES completion:NULL];
+//    [self.navigationController presentViewController:afVC animated:YES completion:nil];
+//    [self.navigationController pushViewController:afVC animated:YES];
     
     afVC = nil;
 }

@@ -22,6 +22,7 @@
         self.extendedLayoutIncludesOpaqueBars = YES;
         self.edgesForExtendedLayout = UIRectEdgeNone;
         
+        
     }
     return self;
 }
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     if (autoenhancemanager ==nil) {
         autoenhancemanager = [ImageFilters sharedInstance];
     }
@@ -40,7 +42,14 @@
     }
     [self.view addSubview:ImageView];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+//    [self.navigationController.navigationBar setHidden:YES];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+//    [self.navigationController.navigationBar setHidden:YES];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

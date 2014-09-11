@@ -12,5 +12,4 @@
 @interface FaceDetectionViewController : UIViewController{
     ImageFilters *manager;
 }
-
 @end

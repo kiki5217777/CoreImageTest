@@ -24,6 +24,7 @@
         [self.view setBackgroundColor:[UIColor whiteColor]];
         self.extendedLayoutIncludesOpaqueBars = NO;
         self.edgesForExtendedLayout = UIRectEdgeNone;
+        
     }
     return self;
 }
@@ -35,7 +36,7 @@
         manager = [ImageFilters sharedInstance];
     }
    [self loadImagetoDetect];
-    
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,10 +69,6 @@
              [resultView setTransform:CGAffineTransformMakeScale(1, -1)];
          });
     });
-    
-    
-    
-    
     
 }
 

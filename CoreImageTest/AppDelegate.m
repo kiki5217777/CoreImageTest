@@ -17,8 +17,9 @@
     ViewController *mainViewController = [[ViewController alloc]initWithNibName:@"ViewController" bundle:nil];
     self.navController = [[UINavigationController alloc]initWithRootViewController:mainViewController];
     [self.navController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
-    [self.window addSubview:self.navController.view];
+//    [self.window addSubview:self.navController.view];
     self.window.rootViewController = self.navController;
+//    [self.navController.navigationBar setHidden:YES];
     [self.window makeKeyAndVisible];
     
     return YES;
